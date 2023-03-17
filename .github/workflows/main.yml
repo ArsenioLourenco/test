@@ -27,6 +27,6 @@ jobs:
         with:
           registry: ghcr.io
           context: .
-          file: ./Dockerfile
+          dockerfile: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest
