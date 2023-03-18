@@ -11,6 +11,5 @@ COPY . .
 RUN npm run test
 
 FROM base as prod
-RUN npm ci --production
 COPY . .
 CMD [ "node", "server.js" ]
