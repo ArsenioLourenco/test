@@ -3,7 +3,7 @@ FROM node:18-alpine as base
 
 WORKDIR /test
 
-COPY package.json package.json
+COPY ./ ./
 RUN npm install
 
 FROM base as test
