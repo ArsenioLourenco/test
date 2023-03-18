@@ -4,7 +4,6 @@ FROM node:18-alpine as base
 WORKDIR /test
 
 COPY ./ ./
-RUN npm install
 
 FROM base as test
 RUN npm ci
