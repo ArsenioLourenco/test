@@ -4,7 +4,6 @@ FROM node:18-alpine as base
 WORKDIR /test
 
 COPY package.json package.json
-COPY package-lock.json package-lock.json
 
 FROM base as test
 RUN npm ci
